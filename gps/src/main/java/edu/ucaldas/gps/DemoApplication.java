@@ -1,6 +1,4 @@
 package edu.ucaldas.gps;
-
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +12,7 @@ public class DemoApplication {
       SpringApplication.run(DemoApplication.class, args);
     }
     @GetMapping("/hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public String hello(@RequestParam(value = "name", defaultValue = "Holaa") String name) {
       return String.format("Hello %s!", name);
     }
 }
